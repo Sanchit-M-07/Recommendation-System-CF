@@ -6,6 +6,24 @@ from scipy.sparse.linalg import svds
 
 class CollaborativeFilteringRecommender:
     """
+    Collaborative filtering recommender system.
+
+    This class implements:
+    - User-based collaborative filtering using user–user similarity.
+    - Item-based collaborative filtering using item–item similarity.
+    - Matrix factorization using truncated SVD for latent factors.
+
+    Methods
+    -------
+    fit(ratings_df, user_col, item_col, rating_col):
+        Fit the model on a user–item rating DataFrame.
+    predict(user_id, item_id):
+        Predict a rating for a given (user, item) pair.
+    recommend(user_id, n=10, filter_seen=True):
+        Generate top-N item recommendations for a given user.
+    """
+
+    """
     Supports:
     - User-based CF
     - Item-based CF
