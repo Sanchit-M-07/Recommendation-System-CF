@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.sparse.linalg import svds
 
-
 class CollaborativeFilteringRecommender:
     """
     Collaborative filtering recommender system.
